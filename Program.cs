@@ -1,23 +1,32 @@
 using Docs_edits.Data;
+using Docs_edits.Services;
 using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using OpenAI;
+using OpenAI.Chat;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Services
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Database
+
+
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<OpenRouterService>();
+
+builder.Services.AddDistributedMemoryCache();
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// CORS
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -26,7 +35,9 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Authentication
+
+
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

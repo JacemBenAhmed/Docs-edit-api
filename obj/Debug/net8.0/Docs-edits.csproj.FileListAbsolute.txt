@@ -124,3 +124,7 @@ C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\ru\Microsoft.
 C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\OpenAI.dll
+C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Jacem\source\repos\Docs-edits\Docs-edits\bin\Debug\net8.0\System.Net.ServerSentEvents.dll

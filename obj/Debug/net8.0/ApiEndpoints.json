@@ -1,5 +1,43 @@
 [
   {
+    "ContainingType": "AssistantController",
+    "Method": "Ask",
+    "RelativePath": "api/Assistant/ask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Docs_edits.DTOs.PromptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AssistantController",
+    "Method": "AskStream",
+    "RelativePath": "api/Assistant/ask-stream",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Docs_edits.DTOs.PromptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AuthController",
     "Method": "GoogleLogin",
     "RelativePath": "api/Auth/google-login",
