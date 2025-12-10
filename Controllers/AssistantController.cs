@@ -9,10 +9,10 @@ using System.Text;
 [Route("api/[controller]")]
 public class AssistantController : ControllerBase
 {
-    private readonly OpenRouterService _service;
+    private readonly AiService _service;
     private readonly IDistributedCache _cache;
 
-    public AssistantController(OpenRouterService service, IDistributedCache cache)
+    public AssistantController(AiService service, IDistributedCache cache)
     {
         _service = service;
         _cache = cache;
