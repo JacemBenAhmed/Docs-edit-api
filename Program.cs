@@ -19,7 +19,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddHttpClient();
-builder.Services.AddScoped<OpenRouterService>();
+builder.Services.AddScoped<AiService>();
 
 builder.Services.AddDistributedMemoryCache();
 
