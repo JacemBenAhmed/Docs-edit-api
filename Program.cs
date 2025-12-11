@@ -67,7 +67,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
-
+app.MapGet("/", () => " API is working!");
 app.UseCors("AllowAll");
 app.UseSwagger();
 app.UseSwaggerUI();
