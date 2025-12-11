@@ -72,13 +72,6 @@ app.UseCors("AllowAll");
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// Enable HTTPS redirection only when configured (useful for Docker/VM HTTP)
-var enableHttpsRedirect = app.Configuration.GetValue<bool>("HttpsRedirection:Enabled", false);
-if (enableHttpsRedirect)
-{
-    app.UseHttpsRedirection();
-}
-
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
