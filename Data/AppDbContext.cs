@@ -1,5 +1,6 @@
 ﻿using Docs_edits.Models;
 using Microsoft.EntityFrameworkCore; 
+
 namespace Docs_edits.Data
 {
     public class AppDbContext : DbContext
