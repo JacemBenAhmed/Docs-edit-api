@@ -7,8 +7,8 @@ RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-EXPOSE 7272
-ENV ASPNETCORE_URLS=http://+:7272
+EXPOSE 7109
+ENV ASPNETCORE_URLS=http://+:7109
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV ASPNETCORE_ENVIRONMENT=Production
 COPY --from=build /app/publish .
