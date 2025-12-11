@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Docs-edits")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c21a771da2001f270c838dc301e53b33b2fba066")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+749f674e1c47dda84a1b52c139d1d7dc205e910f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Docs-edits")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Docs-edits")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
